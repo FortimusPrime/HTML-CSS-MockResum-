@@ -1,0 +1,193 @@
+/* Links to GoogleFonts go here */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lexend:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+/*****  main body elements */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4em;
+}
+#wrapper {
+    min-width: 1400px;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    font-family: "Cabin", sans-serif;
+}
+h2 {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    margin-bottom: 3em;
+    font-family: "Overpass", sans-serif;
+}
+h4, h3 {
+    margin-top: 50px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    /*Resets the pages default margin and padding for the entire html file. This will allow you to have more control when you are styling specific elements.   */
+    margin: 0; 
+    padding: 0;
+    font-size: 100%; /* will make your text 100% of the base font size set in the browser  */
+    background-color: #e3e2e2;
+    font-family: "Lexend", sans-serif;
+
+}
+
+
+
+
+
+
+
+/**** styles for the navigation menu */
+
+#cvmenu {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#cvmenu li {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: "Overpass", sans-serif;
+    letter-spacing: 0.2em;
+}
+
+#cvmenu li a {
+    display: block;
+    text-decoration: none;
+    color: #686a6a;
+    border-radius: 4em;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    background-color:#15DBFE;
+}
+
+#cvmenu li a:hover {
+    color: #8e8e8e;
+    background-color: #88edff;
+    transition: 0.2s;
+}
+
+nav#mainmenu {
+    position:sticky;
+    top: 0px;
+    background-color: #b2b0b0;
+}
+
+li.resume {
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+#cvmenu li.resume a {
+    background-color: #b2b0b0;
+}
+
+
+/**** styles for photos, icons  and logos */
+
+.logo {
+    float: left;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+}
+
+.roundphoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 2em;
+}
+
+.roundphoto:hover, #icons li:hover {
+    transition: 0.5s;
+    transform: scale(1.25);
+}
+
+#icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#icons li{
+    margin: 2em;
+}
+
+
+
+
+
+
+/**** styles for other sections and elements of the resume  */
+
+.box {
+    width: 85%;
+    background-color: #15DBFE;
+    padding: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-bottom: 4em;
+}
+
+hr {
+    clear: left;
+    margin-bottom: 5%;
+}
+.centertext {
+    text-align: center;
+}
+.double {
+    line-height: 2em;
+}
+
+
+
+
+
+/**** styles for lists in bullets for the main sections of the resume */
+.squarebullet {
+    list-style-type: square;
+}
+#skills ul {
+    list-style: none;
+}
+#skills ul li::before {
+    content: '\2713   ';
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.bulleticon {
+    list-style-image: url(bullets/sinkblue.gif);
+}
+
+
+
+
+
+
